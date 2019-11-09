@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_word_card_width">200dp</dimen>
+    <dimen name="wordcard_padding">20dp</dimen>
+    <dimen name="wordcard_definition_margin_top">5dp</dimen>
+    <dimen name="wordcard_radius">10dp</dimen>
+    <dimen name="wordcard_margin_top_bottom">10dp</dimen>
+    <dimen name="wordcard_margin_start_end">10dp</dimen>
+</resources>

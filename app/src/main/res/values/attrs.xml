@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RestraintScrollView">
+        <attr name="maxHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="WordCardView">
+        <attr name="word" format="string" />
+        <attr name="definition" format="string" />
+    </declare-styleable>
+</resources>
