@@ -58,7 +58,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="4dp"
                         android:animateLayoutChanges="true"
-                        android:text="Comida"
+                        android:text="@string/overlay_default_title"
                         android:textColorHighlight="#00111111"
                         android:textSize="24sp"
                         android:textStyle="bold" />
@@ -93,7 +93,7 @@
                                 android:animateLayoutChanges="true"
                                 android:scrollbarAlwaysDrawHorizontalTrack="true"
                                 android:scrollbarAlwaysDrawVerticalTrack="true"
-                                android:text="@string/dummy_definition" />
+                                android:text="@string/overlay_default_description" />
                         </LinearLayout>
                     </com.vbermudez.floatingwidgets.views.RestraintScrollView>
 
@@ -141,7 +141,7 @@
                 android:animateLayoutChanges="true"
                 android:background="@drawable/loading_background"
                 android:indeterminate="true"
-                android:indeterminateTint="@color/primaryLightColor"
+                android:indeterminateTint="@color/primaryLightColorButEvenLighter"
                 android:indeterminateTintMode="src_atop"
                 android:padding="3dp"
                 android:visibility="invisible" />

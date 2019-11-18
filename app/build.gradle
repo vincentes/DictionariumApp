@@ -34,15 +34,15 @@ android {
         def mVersionName = "${versionProps['VERSION_MAJOR']}.${versionProps['VERSION_MINOR']}.${versionProps['VERSION_PATCH']}"
 
         defaultConfig {
-            applicationId "com.vbermudez.floatingwidgets" // leave it at the value you have in your file
+            applicationId "com.vbermudez.floatingwidgets"
+            // leave it at the value you have in your file
             minSdkVersion 19 // this as well
             targetSdkVersion 29 // and this
             versionCode versionProps['VERSION_BUILD'].toInteger()
             versionName "${mVersionName} Build: ${versionProps['VERSION_BUILD']}"
             testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         }
-    }
-    else {
+    } else {
         throw new GradleException("Could not read version.properties!")
     }
     buildTypes {
@@ -62,8 +62,9 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'com.github.andremion:counterfab:1.2.2'
     implementation 'org.msgpack:msgpack-core:0.8.18'
-    implementation 'androidx.appcompat:appcompat:1.0.0'
     implementation 'com.google.android.material:material:1.0.0'
     implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.android.volley:volley:1.1.1'
     implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
 }

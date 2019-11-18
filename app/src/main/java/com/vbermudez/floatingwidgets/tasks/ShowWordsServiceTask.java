@@ -12,6 +12,7 @@ import com.vbermudez.floatingwidgets.MainActivity;
 import com.vbermudez.floatingwidgets.data.Word;
 import com.vbermudez.floatingwidgets.exceptions.InitialNotSupportedException;
 import com.vbermudez.floatingwidgets.service.WordBrain;
+import com.vbermudez.floatingwidgets.utils.ErrorReporter;
 
 import java.util.List;
 
@@ -41,10 +42,11 @@ public class ShowWordsServiceTask extends AsyncTask<String, Void, Integer> {
         try {
             wordBrain.loadSearchTerm(text);
         } catch (InitialNotSupportedException e) {
+            ErrorReporter.report(e, context);
             e.printStackTrace();
         }
-        final List<Word> words = wordBrain.searchDefinition(text);
 
+        final List<Word> words = wordBrain.searchDefinition(text);
         final Handler handler = new Handler(Looper.getMainLooper());
         handler.post(new Runnable() {
             @Override
